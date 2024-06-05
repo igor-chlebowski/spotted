@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(57, 53, 53);
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#header {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem; /* Zwiększono rozmiar czcionki */
+    background-color: rgb(79, 78, 79);
+    color: white;
+}
+
+#name {
+    padding: 1.5rem; /* Zwiększono padding */
+}
+
+#stripe {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+#main {
+    margin-top: 2rem; /* Zwiększono górny margines */
+    text-align: center;
+    padding: 0.8rem; /* Zwiększono padding */
+    position: relative;
+   
+}
+
+textarea {
+    background-color: rgb(45, 45, 45);
+    border-radius: 3px;
+    border: 2px solid black;
+    color: whitesmoke;
+    font-size: 0.9rem; /* Zwiększono rozmiar czcionki */
+    width: 100%;
+    max-width: 600px;
+    height: 100%;/* Zwiększono maksymalną szerokość */
+    max-height: 370px;
+    box-sizing: border-box; /* Uwzględnia padding i border w szerokości */
+    padding: 1rem; /* Zwiększono padding */
+}
+.char-count {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 5px;
+    position: relative; /* Dodajemy pozycję bezwzględną */
+    bottom: -5px; /* Ustawiamy na 20px poniżej dolnej krawędzi kontenera */
+     /* Ustawiamy na prawo kontenera */
+    margin-left: 550px; /* Justyfikacja do prawej strony */
+}
+
+button {
+    width: 100px; /* Zwiększono szerokość */
+    height: 40px; /* Zwiększono wysokość */
+    color: whitesmoke;
+    background-color: rgb(60, 60, 60);
+    border: 1px solid black;
+    margin-right: 0;
+    font-size: 1.2rem; /* Zwiększono rozmiar czcionki */
+    border-radius: 5px; /* Dodano zaokrąglone rogi */
+    
+}
+
+button:hover {
+    width: 100px; /* Zwiększono szerokość */
+    height: 40px; /* Zwiększono wysokość */
+    color: whitesmoke;
+    background-color: rgb(60, 60, 60);
+    border: 2px solid whitesmoke;
+    margin-right: 0;
+    font-size: 1.2rem; /* Zwiększono rozmiar czcionki */
+    border-radius: 5px; /* Dodano zaokrąglone rogi */
+    
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    #header {
+        font-size: 1.5rem; /* Dodatkowe zwiększenie rozmiaru czcionki dla mniejszych ekranów */
+        height: 80px; /* Zwiększono wysokość */
+    }
+
+    #main {
+        margin-top: 2rem; /* Zmniejszono górny margines */
+        padding: 2rem; /* Zwiększono padding */
+    }
+    
+    textarea {
+        height: 370px;
+        font-size: 0.875rem; /* Dodatkowe zwiększenie rozmiaru czcionki */
+        /*padding: 1.2rem;*/ /* Zwiększono padding */
+    }
+
+    .char-count {
+        font-size: 0.8rem;
+        color: gray;
+        margin-top: 5px;
+        position: relative; /* Dodajemy pozycję bezwzględną */
+        bottom: -7px; /* Ustawiamy na 20px poniżej dolnej krawędzi kontenera */
+         /* Ustawiamy na prawo kontenera */
+        margin-left: 250px; /* Justyfikacja do prawej strony */
+    }
+    
+    button {
+        width: 100px; /* Zmniejszenie szerokości dla mniejszych ekranów */
+        height: 50px; /* Zmniejszenie wysokości */
+        font-size: 0.9rem; /* Zmniejszenie font-size */
+    }
+}

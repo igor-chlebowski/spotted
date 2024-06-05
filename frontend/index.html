@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotted::roko</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div id = "header">
+        <div id = "name">
+            spotted
+        </div>
+    </div>
+    <div id = "stripe"></div>
+    <div id = "main">
+        <form id="messageForm" action="/submit">
+        <textarea name="message" id="message" rows="15" cols="80" maxlength="500" placeholder="tell" onkeyup="countChars(this)"></textarea>
+        <div class="char-count" id="charCount">0/500</div>
+        <br>
+        <button type="submit">Wyślij</button>
+        </form>
+    </div>
+
+    <script src="send.js"></script>
+    <script src="counter.js"></script>
+
+</body>
+</html>
