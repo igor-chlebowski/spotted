@@ -8,8 +8,8 @@ const { error } = require('console');
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '6etd%?gTN!223',   //haslo do bazy danych
-    database: 'rokodb'  // nazwa bazy danych
+    password: '',   //haslo do bazy danych
+    database: ''  // nazwa bazy danych
 });
 
 
